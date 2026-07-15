@@ -123,15 +123,16 @@
 
   /* Hero */
   header.hero{
-    background:
-      radial-gradient(120% 90% at 50% -10%, #17624a 0%, var(--emerald) 45%, var(--emerald-d) 100%);
-    color:var(--cream); text-align:center; padding:52px 24px 60px;
+    background:var(--emerald-d) url('/assets/hero-bg.jpg') center/cover no-repeat;
+    color:var(--cream); text-align:center; padding:64px 24px 64px;
   }
-  header.hero img.wordmark{width:min(620px,86%); height:auto; margin:4px auto 0; display:block;
-    border-radius:8px; box-shadow:0 14px 40px rgba(0,0,0,.32)}
-  header.hero .kicker{font-family:var(--serif-head); letter-spacing:.26em; text-transform:uppercase;
-    font-size:13px; color:var(--penny-br); margin:0 0 8px}
-  header.hero h1{color:var(--cream); font-size:clamp(30px,5vw,46px); margin:30px auto 14px; max-width:16ch}
+  header.hero .brand{font-family:var(--serif-head); font-weight:700; color:var(--cream);
+    font-size:clamp(56px,10vw,96px); line-height:1.04; margin:0;
+    text-shadow:0 3px 18px rgba(0,0,0,.45)}
+  header.hero .brand-tag{font-family:var(--serif-head); font-style:italic; color:var(--penny-br);
+    font-size:clamp(20px,3.2vw,28px); margin:10px 0 0; text-shadow:0 2px 10px rgba(0,0,0,.4)}
+  header.hero h1{color:var(--cream); font-size:clamp(28px,4.6vw,42px); margin:44px auto 14px; max-width:18ch;
+    text-shadow:0 2px 12px rgba(0,0,0,.35)}
   header.hero p.sub{font-size:clamp(18px,2.4vw,22px); color:#E6DFCF; max-width:40ch; margin:0 auto 30px}
   .cta{display:inline-flex; gap:12px; flex-wrap:wrap; justify-content:center}
   .btn{display:inline-block; font-family:var(--serif-head); font-size:17px; letter-spacing:.01em;
@@ -195,9 +196,8 @@
 
 <header class="hero">
   <div class="wrap">
-    <p class="kicker">Single File</p>
-    <img class="wordmark" src="/assets/wordmark.png"
-         alt="Single File: clinical document filing for Office Ally">
+    <p class="brand">Single File</p>
+    <p class="brand-tag">Charts, filed right.</p>
     <h1>Your Office Ally document pile, quietly handled.</h1>
     <p class="sub">A HIPAA-compliant service that files and signs your behavioral-health practice's clinical documents into Office Ally, so the after-hours uploading simply disappears.</p>
     <div class="cta">
